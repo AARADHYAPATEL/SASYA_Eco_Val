@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sustainability Rating</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="result-body">
+  <div class="result-section">
+    <h1>Your Sustainability Rating</h1>
+    <p class="subheading">Here's how your building performed across all categories</p>
+
+    <div class="score-box">
+      <div class="rank-label" id="rank-label">Loading rank...</div> <!-- ✅ Add this -->
+      <div class="score-number" id="score-number">0</div>
+      <div class="out-of">Out of 100</div>
+      <div class="feedback" id="feedback">Loading feedback...</div>
+    </div>
+
+    <div class="category-scores">
+      <h3>Category Breakdown</h3>
+      <ul>
+        <li>Building Materials: <span id="building-score-breakdown">-</span></li>
+        <li>Energy Systems: <span id="energy-score-breakdown">-</span></li>
+        <li>Water Management: <span id="water-score-breakdown">-</span></li>
+        <li>Waste Management: <span id="waste-score-breakdown">-</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="improvements-section">
+    <h2>Recommended Improvements</h2>
+    <ul id="improvements-list"></ul>
+  </div>
+
+  <div class="impact-section">
+    <h2>Estimated Environmental Impact</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <h3>Energy Savings</h3>
+        <p id="energy-impact">--%</p>
+      </div>
+      <div class="impact-card">
+        <h3>Water Conservation</h3>
+        <p id="water-impact">--%</p>
+      </div>
+      <div class="impact-card">
+        <h3>Carbon Reduction</h3>
+        <p id="carbon-impact">--%</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="final-buttons">
+    <button onclick="location.href='evaluation.html'" class="retake-btn fancy-btn">Retake Evaluation</button>
+    <button onclick="location.href='index.html'" class="home-btn fancy-btn highlight-btn">Back to Home</button>
+  </div>
+
+
+  <script src="result_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building Evaluation - EcoVal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="eval-container">
+    <a href="index.html" class="back-button">&#8592; Back</a>
+
+    <h1 class="eval-heading">Building Sustainability Evaluation</h1>
+    <p class="eval-subtext">Step 1 of 4: Building Materials</p>
+
+    <div class="progress-bar-wrapper">
+      <div class="progress-bar-fill" style="width: 25%">25%</div>
+    </div>
+
+    <div class="section-steps">
+      <div class="step active">
+        <div class="circle">1</div>
+        <p>Building Materials</p>
+      </div>
+
+      <div class="bridge"></div>
+
+      <div class="step">
+        <div class="circle">2</div>
+        <p>Energy Systems</p>
+      </div>
+
+      <div class="bridge"></div>
+
+      <div class="step">
+        <div class="circle">3</div>
+        <p>Water Management</p>
+      </div>
+
+      <div class="bridge"></div>
+
+      <div class="step">
+        <div class="circle">4</div>
+        <p>Waste Management</p>
+      </div>
+    </div>
+
+    <div class="materials-section">
+      <h2 class="section-subheading">Building Materials</h2>
+      <p class="section-description">Evaluate the sustainability of your building materials</p>
+
+      <div class="slider-container">
+        <label for="recycled">Recycled Materials Usage</label>
+        <p class="slider-subtext">What percentage of your building materials are recycled?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="recycled" min="0" max="100" step="5" value="0" />
+          <span id="recycled-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="sustainable">Sustainable Materials Usage</label>
+        <p class="slider-subtext">What percentage uses eco-friendly materials like bamboo, reclaimed wood?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="sustainable" min="0" max="100" step="5" value="0" />
+          <span id="sustainable-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="local">Locally Sourced Materials</label>
+        <p class="slider-subtext">What percentage of materials were sourced within 500 miles?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="local" min="0" max="100" step="5" value="0" />
+          <span id="local-val">0%</span>
+        </div>
+      </div>
+
+      <div class="category-score">
+        Category Score: <span id="building-score">0%</span>
+      </div>
+    </div>
+
+    <div class="materials-section">
+      <h2 class="section-subheading">Energy Systems</h2>
+      <p class="section-description">Assess your building's energy efficiency and renewable sources</p>
+
+      <div class="slider-container">
+        <label for="solar">Solar Panel Coverage</label>
+        <p class="slider-subtext">What percentage of your building materials are recycled?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="solar" min="0" max="100" step="5" value="0" />
+          <span id="solar-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="efficiency">Energy Efficiency Rating</label>
+        <p class="slider-subtext">LED lighting, Energy Star appliances, insulation quality</p>
+        <div class="slider-wrapper">
+          <input type="range" id="efficiency" min="0" max="100" step="5" value="0" />
+          <span id="efficiency-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="renewable">Renewable Energy Usage</label>
+        <p class="slider-subtext">What percentage of your energy comes from renewable sources?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="renewable" min="0" max="100" step="5" value="0" />
+          <span id="renewable-val">0%</span>
+        </div>
+      </div>
+
+      <div class="category-score">
+        Category Score: <span id="energy-score">0%</span>
+      </div>
+    </div>
+
+    <div class="materials-section">
+      <h2 class="section-subheading">Water Management</h2>
+      <p class="section-description">Review your water conservation and management systems</p>
+
+      <div class="slider-container">
+        <label for="rainwater">Rainwater Harvesting Implementation</label>
+        <p class="slider-subtext">How comprehensive is your rainwater collection system?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="rainwater" min="0" max="100" step="5" value="0" />
+          <span id="rainwater-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="fixtures">Low-Flow Fixtures</label>
+        <p class="slider-subtext">What percentage of fixtures are low-flow (toilets, faucets, showers)?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="fixtures" min="0" max="100" step="5" value="0" />
+          <span id="fixtures-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="recycling">Water Recycling Systems</label>
+        <p class="slider-subtext">Greywater recycling, blackwater treatment systems</p>
+        <div class="slider-wrapper">
+          <input type="range" id="recycling" min="0" max="100" step="5" value="0" />
+          <span id="recycling-val">0%</span>
+        </div>
+      </div>
+
+      <div class="category-score">
+        Category Score: <span id="water-score">0%</span>
+      </div>
+    </div>
+
+    <div class="materials-section">
+      <h2 class="section-subheading">Waste Management</h2>
+      <p class="section-description">Evaluate your waste reduction and recycling practices</p>
+
+      <div class="slider-container">
+        <label for="segregation">Waste Segregation Implementation</label>
+        <p class="slider-subtext">How well is waste separated into categories?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="segregation" min="0" max="100" step="5" value="0" />
+          <span id="segregation-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="composting">Composting System</label>
+        <p class="slider-subtext">Quality and coverage of organic waste composting</p>
+        <div class="slider-wrapper">
+          <input type="range" id="composting" min="0" max="100" step="5" value="0" />
+          <span id="composting-val">0%</span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <label for="effectiveness">Recycling Program Effectiveness</label>
+        <p class="slider-subtext">How comprehensive is your recycling program?</p>
+        <div class="slider-wrapper">
+          <input type="range" id="effectiveness" min="0" max="100" step="5" value="0" />
+          <span id="effectiveness-val">0%</span>
+        </div>
+      </div>
+
+      <div class="category-score">
+        Category Score: <span id="waste-score">0%</span>
+      </div>
+    </div>
+
+    <div class="navigation-buttons">
+      <button id="prev-btn" class="nav-button" style="display: none;">← Previous</button>
+      <button id="next-btn" class="nav-button">Next →</button>
+    </div>
+  </div>
+
+  <script src="materials.js"></script>
+</body>
+</html>

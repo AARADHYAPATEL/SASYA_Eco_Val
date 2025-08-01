@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Analysis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="analysis-body">
+  <div class="analysis-section">
+    <h1>Analyzing your Building</h1>
+    <p>Our program is evaluating your sustainability practices...</p>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-label" id="progress-label">0%</div>
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Evaluation Circles -->
+    <div class="circle-container">
+      <div class="evaluation-step active" id="step-0">
+        <div class="circle-icon green">🍃</div>
+        <h3>Analyzing Materials</h3>
+        <p>Checking material sustainability and recycling rates</p>
+      </div>
+      <div class="evaluation-step" id="step-1">
+        <div class="circle-icon yellow">⚡</div>
+        <h3>Evaluating Energy Efficiency</h3>
+        <p>Evaluating energy efficient and renewable sources</p>
+      </div>
+      <div class="evaluation-step" id="step-2">
+        <div class="circle-icon blue">💧</div>
+        <h3>Assessing Water Systems</h3>
+        <p>Assessing water conservation and management</p>
+      </div>
+      <div class="evaluation-step" id="step-3">
+        <div class="circle-icon purple">♻️</div>
+        <h3>Calculating Final Score</h3>
+        <p>Computing your final sustainability score</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="analysis_script.js"></script>
+</body>
+</html>
